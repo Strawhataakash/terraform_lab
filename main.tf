@@ -5,7 +5,7 @@ provider "aws" {
 
 variable "region" {
   description = "AWS region where resources will be deployed"
-  type        = "string"
+  type        = string
 }
 resource "aws_s3_bucket" "b" {
   bucket = "myawsbucket12345554555"
