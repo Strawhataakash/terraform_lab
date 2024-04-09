@@ -2,11 +2,12 @@ provider "aws" {
   profile = "myaws"
   region  = var.region
 }
-
 variable "region" {
   description = "AWS region where resources will be deployed"
   type        = string
+  default     = "us-west-2"  # Provide a default value if needed
 }
+
 resource "aws_s3_bucket" "b" {
   bucket = "myawsbucket12345554555"
   acl    = "private"
