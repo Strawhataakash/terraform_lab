@@ -10,4 +10,9 @@ resource "aws_s3_bucket" "b" {
     Environment = "Dev"
   }
 }
+variable "region" {
+  description = "AWS region where resources will be deployed"
+  type        = string
+  default     = "ap-east-1"  # Provide a default value if needed
+}
 
