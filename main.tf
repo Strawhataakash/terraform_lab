@@ -5,13 +5,12 @@ provider "aws" {
 variable "region" {
   description = "AWS region where resources will be deployed"
   type        = string
-  default     = "us-west-2"  # Provide a default value if needed
+  default     = "ap-east-1"  # Provide a default value if needed
 }
 
 resource "aws_s3_bucket" "b" {
-  bucket = "myawsbucket12345554555"
-  acl    = "private"
-
+  bucket = "myawsbucket1265555555555555"
+ 
   tags = {
     Name        = "My_new_bucket"
     Environment = "Dev"
